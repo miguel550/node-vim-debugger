@@ -39,7 +39,7 @@ if (argv._.length != 0) {
   // we need to spawn process
   // TODO: use port from portfinder instead 5858 to allow
   // multiple debuggers on the same machine
-  var child = spawn(process.execPath, ['--debug-brk=' + conf.debugger.port].concat(argv._));
+  var child = spawn(process.execPath, ['--inspect-brk=' + conf.debugger.port].concat(argv._));
   var banner = '';
   var waitBanner = true;
   child.stderr.on('data', function(data) {
