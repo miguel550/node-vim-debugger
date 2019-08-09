@@ -15,7 +15,7 @@ var conf = require('rc')("vimdebug", {
     port: 3219
   },
   debugger: {
-    port: 5858
+    port: 9229
   },
   windowmanager: ''
 });
